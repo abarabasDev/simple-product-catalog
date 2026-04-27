@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <div class="row mb-3">
+    <div class="col">
+      <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Szukaj nazwy produktu lub kodu producenta..."
+        [(ngModel)]="searchProductsText"
+        (keyup.enter)="searchProducts()">
+    </div>
+    <div class="col-1">
+      <button class="btn btn-warning" (click)="searchProducts()">Szukaj</button>
+    </div>
+    <div class="col d-flex justify-content-end">
+      <a routerLink="/add-product" class="btn btn-warning">Dodaj produkt</a>
+    </div>
+  </div>
+
+  <products-table [productsInput]="productsToShow()"></products-table>
+
+</div>

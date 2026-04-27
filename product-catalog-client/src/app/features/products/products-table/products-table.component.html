@@ -1,0 +1,24 @@
+  <table class="table table-striped table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th style="cursor:pointer" (click)="sortOverColumnData('name')">Nazwa {{ sortColumnName === 'name' ? (isAsc ? '▲' : '▼') : '' }}</th>
+        <th style="cursor:pointer" (click)="sortOverColumnData('manufacturerCode')">Kod producenta {{ sortColumnName === 'manufacturerCode' ? (isAsc ? '▲' : '▼') : '' }}</th>
+        <th style="cursor:pointer" (click)="sortOverColumnData('price')">Cena {{ sortColumnName === 'price' ? (isAsc ? '▲' : '▼') : '' }}</th>
+        <th style="cursor:pointer" (click)="sortOverColumnData('quantity')">Ilość {{ sortColumnName === 'quantity' ? (isAsc ? '▲' : '▼') : '' }}</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      @for (product of products; track $index) {
+        <tr>
+          <td>{{product.name}}</td>
+          <td>{{product.manufacturerCode}}</td>
+          <td>{{product.price}} zł</td>
+          <td>{{product.quantity}}</td>
+        </tr>        
+      }
+      @empty {
+        Brak produktów do wyświetlenia
+      }    
+    </tbody>
+  </table>

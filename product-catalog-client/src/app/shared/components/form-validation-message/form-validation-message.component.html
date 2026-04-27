@@ -1,0 +1,13 @@
+@if (control.invalid && (control.dirty || control.touched)) {
+  <small class="text-danger">
+    @if (control.errors?.['required']) {
+      Pole jest wymagane
+    }
+    @else if (control.errors?.['minlength']) {
+      Wymagane jest co najmniej {{ control.errors?.['minlength'].requiredLength }} znaków
+    }
+    @else if (control.errors?.['min']) {
+      Proszę podać wartość wiekszą niż 0
+    }
+  </small>
+}
