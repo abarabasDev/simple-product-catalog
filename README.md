@@ -1,4 +1,4 @@
-# Simple Product Catalog
+# Katalog produktów
 
 Aplikacja do obsługi katalogu produktów, pozwala na wyświetlanie listy produktów oraz dodanie nowych produktów do katalogu.
 
@@ -12,7 +12,7 @@ Aplikacja do obsługi katalogu produktów, pozwala na wyświetlanie listy produk
 - `/QualificationTaskAPI` – Kod źródłowy API, dostęp do bazy danych.
 - `/product-catalog-client` – Frontend Angular
 
-## Uruchomienia
+## 🏁 Uruchomienie projektu
 ### 1. Backend (ASP.NET Core)
 Uruchomić projekt QualificationTaskAPI w konfiguracji https.
 Dostęp do API pod adresem: `https://localhost:7100/api/Products`
