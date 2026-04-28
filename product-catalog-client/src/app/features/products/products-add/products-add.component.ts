@@ -29,7 +29,6 @@ export class ProductsAddComponent implements OnInit {
 
   submitForm() {
     const formValue = this.newProductForm.value;
-    this.newProductForm.reset();
 
     this.productService.addProduct(formValue as ProductRequest).subscribe({
       next: value => {
@@ -37,8 +36,8 @@ export class ProductsAddComponent implements OnInit {
         this.router.navigate(['/']);
       },
       error: err => {
-        alert(err.message)
+        alert(err.message);
       }
     });
-  }  
+  } 
 }

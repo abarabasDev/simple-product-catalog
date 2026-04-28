@@ -29,7 +29,7 @@ export class ProductsListComponent implements OnInit {
         this.productsToShow.set(this.products); 
       },
       error: err => { 
-        alert(err.message) 
+        alert(err.message);
       }
     });
   }
