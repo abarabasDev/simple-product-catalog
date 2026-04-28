@@ -72,7 +72,7 @@ namespace Features.Products.Tests
             //arrange
             var request = new AddProductRequest
             {
-                ManufacturerCode = "EAN0000001",
+                ManufacturerCode = "EAN0000003",
                 Name = "Testowy produkt",
                 Price = 10,
                 Quantity = 1,
@@ -91,7 +91,7 @@ namespace Features.Products.Tests
             //arrange
             var request = new AddProductRequest
             {
-                ManufacturerCode = "EAN0000001",
+                ManufacturerCode = "EAN0000004",
                 Name = "Testowy produkt",
                 Price = 10,
                 Quantity = 1,
